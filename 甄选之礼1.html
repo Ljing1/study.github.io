@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>甄选之礼</title>
+	
+	<script type="text/javascript" src="is/轮播.js"></script>
+	<link rel="stylesheet"  href="css/index.css" />
+	<link rel="stylesheet"  href="css/common.css" />
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	
+	<script type="text/javascript">
+		window.onload=function(){
+			var showImg=document.getElementById("showImg");
+			var allImg=document.getElementsByTagName("img");
+			var showDiv=document.getElementById("showDiv");
+			var wrapad=document.getElementById("wrapad");
+		    var allA=showDiv.getElementsByTagName("a");
+			var index=0;
+			allA[index].style.backgroundColor="red";
+			for(var i=0;i<allA.length;i++){
+				allA[i].num=i;
+				allA[i].onclick=function(){
+				index=this.num;
+				showImg.style.left=-400*index+"px";
+				setA();
+				}	
+			}	
+			autochange();
+			function setA(){
+				 for(var i=0;i<allA.length;i++){
+					 allA[i].style.backgroundColor="";
+				 }
+				 allA[index].style.backgroundColor="red";
+			};
+			function autochange () {
+				setInterval(function () {
+					index++;
+					showImg.style.left=-400*index+"px";
+					if(index>=allA.length){
+						index=0;
+					}
+					setA();
+				},2500);
+			}
+		};
+	</script>
+	
+</head>
+<body>
+	<header>
+		<div class="top">
+			<div class="top-page">
+		    <div class="search-box ">
+			<input class="search-txt" type="text" name="" placeholder="Type to search" />
+			    <a class="search-btn" href="#">
+				<i class="fas fa-search"></i>
+			</a>
+		    </div>
+			<div class="top-p2 fr">
+			<ul>
+				<li><a href="登录.html" target="_blank"><img src="img/登录.png"/></a></li>
+				<li><a href="注册.html" target="_blank"><img src="img/收藏.png"/></a></li>
+				<li><a href="#"><img src="img/购物袋.png"/></a></li>
+			</ul>
+			</div>
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" ></a>
+			</div>
+			</div>
+			
+			<div class="daoh">
+		<ul class="out">
+			<li class="d1"><a href="https://www.dior.cn/zh_cn/gifts/gifts" target="_blank">圣诞甄礼</a></li>
+			    <ul class="in1">
+			    	<li>时尚甄选之礼</li>
+			    	<li>女士时尚赠礼</li>
+			    	<li>男士时尚赠礼</li>
+			    	<li>家居好礼</li>
+			    	<li>儿童礼品</li>
+			    	<li>礼盒</li>
+			    </ul>
+			<li><a href="https://www.dior.cn/zh_cn/womens-fashion/woman" target="_blank">女士精品</a></li>
+			<li><a href="https://www.dior.cn/zh_cn/mens-fashion/man" target="_blank">男士精品</a></li>
+			<li><a href="https://www.dior.cn/zh_cn/fragrance/new-fragrances#/Main" target="_blank">香氛</a></li>
+			<li><a href="https://www.dior.cn/zh_cn/makeup/new-makeup#/Main" target="_blank">彩妆</a></li>
+			<li><a href="https://www.dior.cn/zh_cn/skincare/new-skincare#/Main" target="_blank">护肤</a></li>
+			<li><a href="https://www.dior.cn/zh_cn/baby/kids-fashion" target="_blank">童装精品</a></li>
+			<li><a href="家居.html" target="_blank">家居</a></li>
+			<li><a href="资讯.html" target="_blank">最新资讯</a></li>
+		</ul>
+	        </div>
+		</div>
+	</header>
+	<h2>迪奥节日甄选</h2>
+	<div class="ym">
+		<div class="zuo">
+			<a href="https://www.dior.cn/zh_cn/gifts/women%E2%80%99s-fashion-and-accessories-gifts" target="_blank"><img src="img/z1.jfif" width="900px"/></a>
+			   
+			   <br />
+			   <h3>女士节日甄选</h3>
+			   <div class="zb box">
+			      <div class="gm">
+					  <a class="shop-btn " href="#"><i class="fas fa-shopping-bag"></i>立即购买</a>
+				  </div>
+			   </div>
+		</div>
+		
+				<div class="box0">
+				 <ul class="liebiao">
+					<li><img src="img/右1.webp" width="400px" height="500px"/><>
+					<li><img src="img/右2.webp" width="400px" height="500px"/><>
+					<li><img src="img/右3.webp" width="400px" height="500px"/><>
+					
+				 </ul>
+				
+				</div>
+			
+		
+		<script>
+		    var shang = document.getElementById('shang');
+			var next = document.getElementById('next');
+			var liebiao = document.querySelectorAll('#liebiao>li');
+			
+			var lunbo = document.getElementById('box1');
+			var add=0;
+			
+			function nextfun()
+			{
+				liebiao[add].style.display="none";
+				add++;
+				if(add==3)
+				{add=0;}
+				liebiao[add].style.display="block";
+				change();
+				}
+			
+			function shangfun()
+			{
+				liebiao[add].style.display="none";
+				add--;
+				if(add==-1)
+				{add=2;}
+				liebiao[add].style.display="block";
+				change();
+				}
+			var time = setInterval(nextfun,5000);
+		
+		</script>
+	<div class="ym1">
+		<div class="zuo1">
+			<a href="https://www.dior.cn/zh_cn/gifts/%E9%A6%99%E6%B0%9B%E4%B8%8E%E7%BE%8E%E5%A6%86/holidays-in-dior?tab=%E8%8A%B1%E5%A2%83%E6%A2%A6%E5%B7%A5%E5%9D%8A#/Main" target="_blank"><img src="img/z2.webp" width="900px"/></a>
+			   <br />
+			   <h3>梦之工坊</h3>
+			   <div class="zb box">
+			      <div class="gm">
+					  <a class="shop-btn " href="#"><i class="fas fa-shopping-bag"></i>立即购买</a>
+				  </div>
+			   </div>
+		</div>
+		<div id="wrapad">
+			<ul id="showImg">
+				<li><img src="img/香水1.webp" ></li>
+				<li><img src="img/香水2.webp" ></li>
+				<li><img src="img/香水3.webp" ></li>
+				<li><img src="img/香水5.webp" ></li>	
+			</ul>
+			<div id="showDiv">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="sp">
+		<<video src="img/口红.mp4" width="1400px" autoplay muted controls loop>
+		</video>
+	    </div>
+	<div class="gd">
+		
+		<marquee>DIOR迪奥线上精品店专享服务
+	       &nbsp;&nbsp;7天无理由退货
+	       &nbsp;&nbsp;免费配送 
+	        &nbsp;&nbsp;迪奥艺术定制包装
+	    </marquee>
+	</div>
+	<hr />
+	<img src="img/精品.png" width="1500px"/>
+	
+	<div class="zhu dui">
+		 <ul>
+			 <li><img src="img/c1.webp"/><a href="#">电子营业执照</a></li>
+			<li><img src="img/c2.webp"/><a href="#">沪公网安备 31010602002343号</a></li>
+			 <li><img src="img/c3.webp"/><a href="#">沪ICP备19005922号</a></li>
+			 <li><a href="#">沪通信管自贸[2020]13号</a></li>
+			 <li><a href="#">尚圃电子商务（上海）有限公司</a></li>
+			 <li><a href="#">上海市南京西路1266号恒隆广场1期29F</a></li>
+		 </ul>
+	</div>
+</body>
+</html>

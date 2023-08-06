@@ -1,0 +1,621 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+h2{
+	position: absolute;
+	font-family: '黑体';
+	font-size: 24px;
+	top:20%;
+	left:45%;
+	text-align: center;
+}
+.z1{
+	position: absolute;
+	font-family: '宋体';
+	font-size: 15px;
+	top:28%;
+	left:38%;
+	text-align: center;
+}
+h3{
+	
+	size:'5';
+	font-family: '宋体';
+	top:30%;
+	left:30%;
+	
+}
+/*甄选之礼轮播*/
+            #wrapad{
+                    width:400px;
+					height: 500px;
+					float: left;
+					position: relative;
+                    overflow: hidden;
+					background-image: url(img/香水4.webp);
+					background-size: 100% 100%;
+					margin-top: 50px;
+					margin-left: 30px;
+				}	
+				#showImg{
+					width:400%;
+					list-style: none;
+					position:absolute;
+				}
+				#showImg img{
+					float: left;
+					width:400px;
+					height:500px;
+				}
+				#showDiv{
+					position:absolute;
+					color:#fff;
+					bottom:25px;	
+				}
+				#showDiv a{
+					float: left;
+					height:14px;
+					width:14px;
+					border-radius:100%;
+					background-color: #FFFFFF;
+					margin: auto 12px ;
+				}
+				#showDiv a:hover{
+					background-color: #999DB0;
+				}
+/*甄选之礼盒子*/
+.sp{
+	margin-left: 20px;
+}
+.gd{
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.zuo{
+	width: 900px;
+	/*background-color: #00FFFF;*/
+	margin-top: 100px;
+	float: left;
+}
+
+.zb{
+	margin-top: 10px;
+	
+}
+
+.gm a{
+	margin-left: 50px;
+	margin-top: 20px;
+	color: #ffffff;
+}
+
+.box0{
+				width: 400px;
+				height: 600px;
+				float: left;
+				margin-top: 20px;
+				margin: 0px auto;
+				/* position:relative; */
+			}
+			.liebiao{
+				list-style-type: none;
+				margin-top: 100px;
+				margin-left: 20px;
+			}
+			.liebiao li{
+				display: none;
+			}
+			.liebiao li:first-child{
+				display:block;
+			}
+
+.arrow{
+	position: absolute;
+	width: 350px;
+	height: 500px;
+}
+.arrow div{
+	height: 60px;
+	width: 40px;
+	position: absolute;
+	top: 220px;
+	font-size: 30px;
+	line-height: 60px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 10;
+	background-color: #ffffff;
+	opacity: 0.5;
+	cursor: default;
+}
+.zuo1{
+	width: 900px;
+	/* background-color: #00FFFF; */
+	margin-top: 50px;
+	margin-left: 50px;
+	float: left;
+}
+.slideshow{
+	position: relative;
+	
+	width: 350px;
+	height: 520px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+.pre {
+	            position: absolute;
+	            top: 500px;
+	            left: 1000px;
+	            width: 50px;
+	            height: 100px;
+	            font-size: 40px;
+	            opacity: 0.5;
+	            cursor: pointer;
+				
+	        }
+	
+.next {
+	            position: absolute;
+	            top: 100px;
+	            left: 2000px;
+	            width: 50px;
+	            height: 100px;
+	            font-size: 40px;
+	            opacity: 0.5;
+	            cursor: pointer;
+	        }
+.imglist li{
+	position: absolute;
+	opacity: 0;
+}
+ .dotlist {
+	            position: absolute;
+	            bottom: 30px;
+	            width: 100px;
+	            display: flex;
+	            justify-content: space-between;
+	            left: 50%;
+	            transform: translate(-50%);
+	        }
+.dotlist > li {
+	            width: 20px;
+	            height: 20px;
+	            text-align: center;
+	            border-radius: 50%;
+	            background-color: rgb(206, 16, 16);
+	            opacity: 0.3;
+	            cursor: pointer;
+	            user-select: none;
+	        }
+.imglist > li.appear
+.dotlist > li.appear{
+	opacity: 1;
+}
+
+.dior{
+	padding-top: 10px;
+	background-color: #000000;
+	width: 1400px;
+	height: 300px;
+	justify-content: center;  /*容器在主轴上居中对齐*/
+	align-items: center;     /*垂直方向居中*/ 
+}
+.xian{
+	padding-top: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+.p{
+	margin-left: 400px;
+	margin-top: 20px;
+}
+.ps{
+	justify-content: center;  /*容器在主轴上居中对齐*/
+	align-items: center;     /*垂直方向居中*/ 
+	
+}
+/*左右箭头*/
+.left{
+	left: 0;
+}
+.right{
+	right: 0;
+}
+.dot{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	width: 90px;
+	
+	z-index: 10;
+	bottom: 0;
+	left: 120px;
+}
+.dot div{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	border: 3px solid #ffffff;
+}
+
+/*登录盒子*/
+.content{
+	margin: 500px 50px;
+	padding: 100px;
+	width: 100vw;
+	height: 100vh;
+	/*display: flex;*/
+	
+	justify-content: center;  /*容器在主轴上居中对齐*/
+	align-items: center;     /*垂直方向居中*/ 
+}
+.login-content{
+	margin: 30px 300px;
+	position: relative;
+	width: 800px;
+	height: 500px;
+	/*background-color: #111111;*/
+	 background: url("../img/登录.jfif");
+	border-radius: 30px;
+	padding: 30px;
+}
+.banner-box{
+	margin-top: 30px;
+	display: inline-block;
+	width: 500px;
+	height: 100%;
+	/*background-color: #007600;*/
+	
+	background-size: cover;
+	border-radius: 20px 0 0 20px;
+}
+.login-box{
+	
+	margin-left: 1000px;
+	width: 330px;
+	height: 100%;
+	background-color: #d6bb9e;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0 30px 30px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login-box>h1{
+	font-size: 36px;
+	margin: 60px 0;
+	color: #ffffff;
+}
+.login-box>input{
+	margin-bottom:20px;
+	width: 200px;
+	height:36px;
+	padding: 0 20px;
+	border-radius: 36px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+.login-btn{
+	margin-top: 20px;
+	width: 200px;
+	height: 40px;
+	background-color: #9B8466;
+	border: none;
+	border-radius: 40px;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+@media screen and (max-width:900px) {
+	.login-content{
+		margin: 0 30px;
+	}
+	.banner-box{
+		border-radius: 20px;
+	}
+	.login-box{
+		background-color: #9B8466;
+	}
+}
+@media screen and (max-width:600px){
+	.content{
+		background: url(./背景.jfif) no-repeat center;
+	}
+	.login-content{
+		background-color: #9B8466;
+	}
+	.banner-box{
+		display: none;
+	}
+	.login-box{
+		position: initial;
+		margin: -40px auto;
+		background-color: #9B8466;
+	}
+}
+
+.dlt{
+	float: left;
+}
+.dian{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	justify-content: center;  /*容器在主轴上居中对齐*/
+	align-items: center;     /*垂直方向居中*/ 
+}
+.dian a{
+	text-decoration: none;
+	color: #000000;
+	text-align: center;
+	font-size: 12px;
+}
+/*返回顶部箭头*/
+.up{
+	position: fixed;
+	  bottom: 0;
+	  right: 0;
+	  width: 50px;
+	  height: 50px;
+	  padding: 10px;
+	  border: 1px groove #111;
+	  border-radius:50%;
+	  margin-right:30px;
+	  margin-bottom:30px;
+	  background-color: #FFFFFF;
+	  justify-content: center;  /*容器在主轴上居中对齐*/
+	align-items: center;     /*垂直方向居中*/
+}
+.jt{
+	
+	text-align: center;
+	justify-content: center;  /*容器在主轴上居中对齐*/
+	align-items: center;     /*垂直方向居中*/
+}
+.jt a{
+	font-size:60px;
+	
+	color: #000000;
+	text-align: center;
+}
+/*资讯盒子*/
+.zx{
+	margin-top: 200px;
+}
+/* 鼠标放上变大有阴影 */
+.z2:hover{
+	transform: scale(1.04);
+	box-shadow: 0 0 15px #000000;
+}
+.l1{
+	text-align: center;
+	margin-left: 170px;
+	margin-top: 20px;
+	width: 50px;
+	padding: 10px 24px;
+	font-size: 16px;
+	background-color: #E5E5E5;
+	border: 2px solid #aca8a5;
+	border-radius: 50px;
+}
+.l1 a{
+	list-style:none;
+	color: #111;
+}
+.l1 a:hover{
+	
+	color: #9B8466;
+	transition: all 0.3s ease;
+}
+/*底部*/
+.lianxi{
+	float:left;
+	    width: 33%;
+	    display: flex;
+	    flex-direction: column;  /*主轴为垂直方向，起点在上沿*/
+	    justify-content: center;  /*容器在主轴上居中对齐*/
+	    align-items: center;     /*垂直方向居中*/
+		padding:30px;
+		text-align: center;      /*每行居中对齐*/
+		line-height:35px;     /*行间距*/
+		margin-top:10px;
+		margin-left:100px;
+}
+.lianxi ul li {
+	list-style:none;
+	font-family: "黑体";
+	color: #111;
+	
+}
+.lianxi ul li a{
+	color:#111;
+	font-size:15px;
+}
+.zhu{
+	line-height:20px;
+	margin-top:10px;
+}
+.zhu a{
+	color:#111;
+	font-family: "宋体";
+	text-decoration: none;   /*去掉下划线*/
+	font-size:17px;   /*字体大小*/
+	
+}
+
+.guanzhu{
+	float:left;
+	top:20%;
+	    width: 33%;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+		margin:auto;
+		padding:100px;
+}
+.guanzhu a{
+	color:#111;
+}
+   /*导航栏*/
+   .daoh{
+	   position: absolute;
+	   top: 10%;
+	   left: 18%; 
+   }
+.daoh ul li{
+	list-style: none;   /*去掉原点*/
+	float: left;      /*横向*/
+	padding-right: 20px;
+	font-size: 17px;
+	margin: 0 auto;
+	font-family: "宋体";
+	
+	align-items: center;
+}
+.daoh ul li a{
+	text-decoration: none;   /*去掉下划线*/
+	color: #000;
+	justify-content: center;
+	padding: 0 20px;
+}
+.daoh ul li a:hover{
+	color: #9B8466;
+	transition: all 0.3s ease;
+}
+
+.in1{
+	list-style: none;
+	float: left;
+	display: none;
+}
+.in1 li{
+	margin: 0px;
+	
+}
+.d1:hover>ul{
+	display: block;
+}
+   /*搜索栏*/
+.search-box:hover > .search-txt{
+	width: 100px;
+	padding: 0 6px;
+}
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width:0px;
+}
+.search-btn{
+	color: #FFFFFF;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #9B8466;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-box{
+	float: left;
+	line-height:40px;
+	/*position: absolute;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #9B8466;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+	margin: 50px auto;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	box-shadow: 2px 3px 5px #ccc;
+}
+/*.box{
+    	padding: 0px 0px 10px 10px;
+		margin: 0 auto;
+		border-width: 0;
+    }*/
+.menu ul{
+	margin: 0 auto;
+	top: 10%;
+	left: 50%; 
+}	
+
+.menu ul li a{
+	text-decoration: none;   /*去掉下划线*/
+	color: #000;
+	text-align: center;
+}
+.menu ul li{
+	padding-right: 20px;
+	list-style: none;   /*去掉原点*/
+	font-size: 17px;
+	float: left;      /*横向*/
+	margin: 0 auto;
+	font-family: "宋体";
+	text-decoration: none;  /*去掉下划线*/
+	text-align: center;    /*居中对齐*/
+}
+.menu ul li a:hover{
+	color: #9B8466;
+	transition: all 0.3s ease;
+}
+.top{
+	
+	height: 100px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.top-page{
+	width: 1400px;
+	height: 100px;
+	margin: 0 auto;
+	line-height:50px;
+}
+.logo-btn{
+	border-radius: 8px;   /*圆角边框*/
+}
+.logo-search{
+	border-radius: 8px;
+}
+.top-p1 {
+	outline:none;
+	padding:20px;
+}
+.top-p2 ul li{
+	float: left;
+	padding-right: 10px;
+	list-style: none;   /*去掉原点*/
+	font-size: 20px;
+	line-height:100px;
+}
+
+.logo{
+	text-align: center;
+	line-height: 100px;
+	font-size: 50px;
+}
+
+

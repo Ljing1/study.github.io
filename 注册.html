@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户注册</title>
+		<link rel="stylesheet"  href="css/注册.css" />
+		<link rel="stylesheet"  href="css/index.css" />
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	    <script type="text/javascript" src="js/注册.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="top">
+				<div class="top-page">
+				<div class="top-p2 fr">
+				<ul>
+					<li><a href="登录.html" target="_blank"><img src="img/登录.png"/></a></li>
+					<li><a href="注册.html" target="_blank"><img src="img/收藏.png"/></a></li>
+					<li><a href="#"><img src="img/购物袋.png"/></a></li>
+				</ul>
+				</div>
+				<div class="logo">
+					<a href="index.html"><img src="img/logo.png" ></a>
+				</div>
+				</div>
+				
+			</div>
+		</header>
+		<!-- <div class="box">
+					<div class="right">
+						<h4>注 册</h4>
+						<form action="#" >
+						    <input id="youxing" class="acc" type="text" placeholder="邮箱地址" />
+							<input  id="shoujihao" class="acc" type="text" placeholder="手机号" />
+							<input  id="zhanghao" class="acc" type="text" placeholder="用户名:4到16位（字母，数字，下划线，减号）" />
+							<input  id="mima" class="acc" type="password" placeholder="密码:6-16个字符,大写字母,小写字母,数字" />
+							<input  id="querenmima" class="acc" type="password" placeholder="确认密码" />
+							<input  id="yanzhnegma" class="acc" type="text" placeholder="验证码" />
+							<input id="submit" class="submit" type="submit" value="Register" />
+						</form>
+						
+						<div class="fn">
+						    <a href="登录.html">返 回 登 录</a>
+							<a href="注册.html">重 新 注 册</a>
+						</div>
+						
+			         </div>
+		</div> -->
+		<div class="z">
+		       <div id="user_reg">
+				   <img src="img/登录.jfif" width="400px" height="400px"/>
+			   </div>
+		       <div class="sr">
+				<form action="./servlet/RegisterServlet" method="post" name="form" >
+				 <h3>注册</h3>
+				 <table>
+				  <tr>
+				   <td>请输入注册邮箱：</td>
+				   <td><input type="text" id="username" name="username" placeholder="只能用邮箱注册" onblur="validate_username(this.value)"/></td>
+				   <td id="test_user"></td>
+				  </tr>
+				  <tr>
+				   <td>请输入密码：</td>
+				   <td><input type="password" id="password" name="password" placeholder="6位密码由数字和字母组成" onblur="validate_password(this.value)"/></td>
+				   <td id="test_pw"></td>
+				  </tr>
+				  <tr>
+				   <td>请确认密码：</td>
+				   <td><input type="password" id="password2" name="password2" onblur="validate_password2(this.value)" /></td>
+				   <td id="is_test_pw"></td>
+				  </tr>
+				  <tr>
+				   <td></td>
+				   <td ><input type="submit" id="submit_form" value="注册" onclick="return validate_form()"/>
+				    <input type="reset" value="重置"/>
+				   </td>
+				  </tr>
+				 </table>
+				</form>
+			   </div> 
+		</div>
+		<hr color="#aeb7b9" />
+		<div class="dian">
+		     <ul>
+				 <li><img src="img/c1.webp"/><a href="#">电子营业执照</a></li>
+				 <li><img src="img/c2.webp"/><a href="#">沪公网安备 31010602002343号</a></li>
+				 <li><img src="img/c3.webp"/><a href="#">沪ICP备19005922号</a></li>
+				 <li><a href="#">沪通信管自贸[2020]13号</a></li>
+				 
+			 </ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.box{
+	width: 200px;
+	height: 50px;
+	border: 1px solid ;
+	border-radius: 50px;
+	background-color: #000000;
+	margin-bottom: 50px;
+}
+.dui{
+	text-align: left;  /*左对齐*/
+}
+
+.pp{
+	margin-left: 80px;
+	float: left;
+	color: #ffffff;
+}
+/*家居*/
+.can{
+	border-style: none;
+	width: 25%;   /*4个盒子水平放置*/
+	height: 400px;
+	width: 300px;
+	padding: 10px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+/*甄选盒子*/
+.zb1{
+	width: 200px;
+	height: 100px;
+}
+.color{
+	background-color: #000000;
+}
+/*购买键*/
+.s-btn{
+	color: #FFFFFF;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #111;
+	align-items: center;
+	
+}
+.gou{
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+}
+.l-btn{
+	border-radius: 50%;
+	
+}
+.z{
+	border-style: ridge;
+	width: 30%;   /*三个盒子水平放置*/
+	height: 500px;
+	padding: 10px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
